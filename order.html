@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="css/order.css">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/common.js"></script>
+  <script>
+    $(function () {
+  // 기본값: 일반결제 열기
+  $('#pay_normal').prop('checked', true)
+    .closest('.payment_group')
+    .addClass('active');
+
+  $('input[name="payType"]').on('change', function () {
+    $('.payment_group').removeClass('active');
+    $(this).closest('.payment_group').addClass('active');
+  });
+});
+
+  </script>
 </head>
 <body>
   <div id="headers"></div>
@@ -91,12 +105,12 @@
         <img src="images/order/toss.png" alt="토스페이">
       </label>
 
-      <input type="radio" id="easy-payco" name="easyPay" value="payco">
+      <input type="radio" id="easy_payco" name="easyPay" value="payco">
       <label for="easy_payco" class="pay_logo payco">
         <img src="images/order/payco.png" alt="페이코">
       </label>
 
-      <input type="radio" id="easy-samsung" name="easyPay" value="samsung">
+      <input type="radio" id="easy_samsung" name="easyPay" value="samsung">
       <label for="easy_samsung" class="pay_logo samsung">
         <img src="images/order/samsung.png" alt="삼성페이">
       </label>
@@ -114,40 +128,53 @@
   </label>
 </section><!-- pay_method -->
 
-      <section class="payment_summary">
-        <h3>결제 예정 금액</h3>
+<section class="payment_summary">
+  <h3>결제 예정 금액</h3>
 
-        <ul class="summary_list">
-          <li>
-            <span>총 주문 금액</span>
-            <strong>7,200원</strong>
-          </li>
-          <li>
-            <span>배송비</span>
-            <strong>2,500원</strong>
-          </li>
-          <li>
-            <span>상품 할인</span>
-            <strong class="discount">-1,000원</strong>
-          </li>
-        </ul><!-- summary_list -->
+  <ul class="summary_list">
+    <li class="summary_group">
+      <p class="summary_title">결제 금액</p>
 
-        <div class="final_price">
-          <span>최종 결제 금액</span>
-          <strong>8,700원</strong>
-        </div><!-- final_price -->
-      </section><!-- payment_summary -->
+      <ul class="summary_detail">
+        <li class="summary_item">
+          <span class="summary_label">총 주문 금액</span>
+          <strong class="summary_price">7,200원</strong>
+        </li>
+        <li class="summary_item">
+          <span class="summary_label">배송비</span>
+          <strong class="summary_price">2,500원</strong>
+        </li>
+      </ul>
+    </li>
+
+    <li class="summary_group">
+      <p class="summary_title">할인 금액</p>
+
+      <ul class="summary_detail">
+        <li class="summary_item">
+          <span class="summary_label">상품 할인</span>
+          <strong class="summary_price discount">-1,000원</strong>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
 
       <section class="agreement">
         <h3>약관 동의</h3>
 
         <label>
           <input type="checkbox">
-          미성년자가 체결한 계약은 법정대리인이 동의하지 않는 경우, <br> 본인 또는 법정대리인이 취소할 수 있습니다.
+          (필수) 미성년자가 체결한 계약은 법정대리인이 동의하지 않는 경우,<br> 본인 또는 법정대리인이 취소할 수 있습니다.
         </label>
         <label>
           <input type="checkbox">
-          주문할 상품의 상품명과 가격, 배송정보를 명확히 확인하였으며 <br> 구매 진행에 동의합니다. (전자상거래 제 8조2항)
+          (필수) 주문할 상품의 상품명과 가격, 배송정보를 명확히 확인하였으며 <br> 구매 진행에 동의합니다. (전자상거래 제 8조2항)
+        </label>
+        <label>
+          <input type="checkbox">
+          (선택) 주문할 상품의 상품명과 가격, 배송정보를 명확히 확인하였으며 <br> 구매 진행에 동의합니다. (전자상거래 제 8조2항)
         </label>
       </section><!-- agreement -->
 

@@ -8,7 +8,7 @@ main {width: 100%;}
 main > img {width: 100%;}
 
 
-.category ul {display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 10px;}
+.category ul {display: flex; justify-content: space-between; align-items: center; margin: 5px;}
 
 .category button {background-color: #fff; border: none; padding: 10px; cursor: pointer; font-weight: bold; color: #584f4b;}
 
