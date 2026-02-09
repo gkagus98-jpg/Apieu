@@ -90,7 +90,9 @@ h3 {font-size: 24px; font-weight: 800; color: #555; margin-bottom: 20px;}
 
 
 /* 약관 동의 */
-.agreement {margin: 0 20px; padding-top: 20px;}
+.agreement {margin: 0 20px; padding-top: 20px; }
+
+.agreement input {margin: 8px;}
 
 .agreement label {display: block; text-align: center; font-size: 14px;}
 

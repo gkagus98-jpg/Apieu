@@ -23,9 +23,8 @@ h2 a:hover {text-decoration: underline;}
 
 
 #icon_btn_wrap
-{text-align: center; }
+{display: flex; justify-content: space-evenly;}
 
-.icn {display: inline-block; padding: 10px 40px;}
 
 
 
