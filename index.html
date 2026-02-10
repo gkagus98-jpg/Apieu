@@ -6,16 +6,55 @@
   <title>A'pieu</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/common.js"></script>
 </head>
 <body>
   <div id="headers"></div>
 
+  <div id="menus"></div> 
+
   <div id="container">
-    <div class="main_img">
-      <img src="images/index/main_img.jpg" alt="slide">
+    <div class="swiper mySwiper main_img">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/index/banner1.jpg" alt="배너1">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/index/banner2.png" alt="배너2">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/index/banner3.png" alt="배너3">
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/index/banner4.png" alt="배너4">
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
     </div><!-- main_img -->
+
+      <!-- Swiper JS (banner) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
 
 
     <section>

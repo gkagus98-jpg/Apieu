@@ -8,9 +8,9 @@ main {width: 100%;}
 main > img {width: 100%;}
 
 
-.category ul {display: flex; justify-content: space-between; align-items: center; margin: 10px;}
+.category ul {display: flex; justify-content: space-evenly; align-items: center; margin: 8px 0;}
 
-.category button {background-color: #fff; border: none; cursor: pointer; font-size: 14px; font-weight: bold; color: #584f4b;}
+.category button {background-color: #fff; border: none; cursor: pointer; font-size: 15px; font-weight: bold; color: #584f4b;}
 
 .category li:first-child button {text-decoration: underline;}
 
