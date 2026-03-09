@@ -20,15 +20,18 @@ main > img {width: 100%;}
 
 .product_list > ul > li {width: 45%;}
 
-.product_card {text-align: center; margin-bottom: 10px;}
+.product_card {text-align: center; margin-bottom: 10px; }
 
 .product_card img {width: 100%}
+
 
 .product_card h3 {font-size: 17px; color: #584f4b; margin: 5px;}
 
 .product_card h3:hover {text-decoration: underline;}
 
 .h3_txt {margin: 20px 0;}
+
+
 
 .price {font-weight: 600; color: #84a3c0; }
 

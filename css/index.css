@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 
-#container {width: 100%; margin-bottom: 30px;}
+
+#container {width: 100%; margin-bottom: 30px; /* background-color: #eff4f8; */}
 .main_img {width: 100%;}
 .main_img img {width: 100%; display: block;}
 
@@ -16,6 +17,8 @@
 .best_txt1:hover {text-decoration: underline;}
 .best_txt2 {display: block; text-align: center; font-size: 12px; color: #84A3C0;}
 
+
 #photo {margin-top: 20px;}
 #photo img {width: 100%;}
+
 

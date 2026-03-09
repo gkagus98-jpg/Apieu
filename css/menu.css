@@ -15,10 +15,10 @@
 #gnb > ul {margin-top: 20px;}
 #gnb > ul > li {border-bottom: 1px solid #eee; padding: 10px 0;}
 
-#gnb > ul > li > a {display: flex; justify-content: space-between; align-items: center; font-size: 22px; font-weight: 700; color: #84A3C0; text-decoration: none; padding: 8px 0;}
+#gnb > ul > li > a {display: flex; justify-content: space-between; align-items: center; font-size: 22px; font-weight: 700; color: #555; text-decoration: none; padding: 8px 0;}
 #gnb > ul > li > a img {display: block;}
 
 .submenu {display: none; padding: 10px 0 5px 0;}
-.submenu li a {display: block; font-size: 18px; font-weight: 500; color: #584f4b; text-decoration: none; padding: 6px 0;}
+.submenu li a {display: block; font-size: 18px; font-weight: 500; color: #555; text-decoration: none; padding: 6px 0;}
 
-.submenu li a:hover {color: #84A3C0;}
+.submenu li a:hover {color: #455766; text-decoration: underline;}
